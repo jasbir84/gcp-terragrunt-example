@@ -1,6 +1,6 @@
 
 module "gce" {
-  source          = "git::https://github.com/jasbir84/tf-module-gcp-vm.git//modules?ref=1.0.16"
+  source          = "git::https://github.com/jasbir84/tf-module-gcp-vm.git/"
   compute_name    = var.vm_name
   compute_seq     = var.vm_sequence
   vm_tags         = var.vm_tags
