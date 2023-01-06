@@ -1,6 +1,6 @@
 
 locals {
-  project  = "nap-devops-nonprod"
+  project  = "jasbirtestproj"
   region = "asia-southeast1"
 }
 
@@ -8,7 +8,7 @@ inputs = {
   project = local.project
   region = local.region
   vpc_name  = "rke-demo-vpc"
-  boot_disk_image = "projects/nap-devops-nonprod/global/images/ubuntu-20-develop"
+  boot_disk_image = "projects/jasbirtestproj/global/images/ubuntu-20-develop"
 
   gce_manager_service_account = "gce-manager@${local.project}.iam.gserviceaccount.com"
   gce_rke_service_account = "gce-rke@${local.project}.iam.gserviceaccount.com"
