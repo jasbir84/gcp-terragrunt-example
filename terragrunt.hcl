@@ -8,7 +8,7 @@ inputs = {
   project = local.project
   region = local.region
   vpc_name  = "rke-demo-vpc"
-  boot_disk_image = "projects/jasbirtestproj/global/images/ubuntu-20-develop"
+  boot_disk_image = "projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20230104"
 
   gce_manager_service_account = "gce-manager@${local.project}.iam.gserviceaccount.com"
   gce_rke_service_account = "gce-rke@${local.project}.iam.gserviceaccount.com"
